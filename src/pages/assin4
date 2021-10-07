@@ -1,0 +1,138 @@
+/*1.    Read two numbers and display their sum.*/
+function Sum()
+{   
+    var value1 = prompt("enter value !");
+    var value2 = prompt("enter value 2");
+    var a = parseInt(value1);
+    var b = parseInt(value2);
+    console.log("Sum of two number :",a+b);
+
+}
+
+/*2.  Read in two numbers and display the larger number.*/
+
+function Large()
+{
+    var value1 = prompt("enter a value1");
+    var value2 = prompt("enter a value2");
+    var a = parseInt(value1);
+    var b = parseInt(value2);
+
+    if(a>b)
+    {
+        console.log("Large Number:",a );
+    }
+    else{
+        console.log("Large Number:",b );
+    }
+
+}
+
+/*3.  Read in two numbers and display them in ascending order*/
+
+function Asscending() 
+{
+    var value1 = prompt("enter a value1");
+    var value2 = prompt("enter a value2");
+    var a = parseInt(value1);
+    var b = parseInt(value2);
+
+    if(a>b)
+    {
+        console.log("Ascending Order:",a,b );
+    }
+    else{
+        console.log("Ascending Order:",b ,a);
+    }
+}
+
+/*4.  Use a loop to display the numbers 0 through 5*/
+function loop_1()
+{
+
+    for(var count =0; count <=5;count++)
+    {
+        console.log("The number are :",count);
+    }
+        
+}
+
+/*5.  Use a loop to display the integers 9 through 0 in descending order
+*/
+function loop_2()
+{
+    for(var count =9; count >=0;count--)
+    {
+        console.log("The number are :",count);
+    }
+        
+}
+  
+/* 6. Use a loop to display the numbers in the range 0…20 that are multiples of 3.*/
+function loop_3() 
+{   
+    for( i=0 ; i<=20; i++)
+    {
+        if (i % 3 == 0) 
+        {
+            console.log(i)
+        }
+        
+        
+    
+    }
+}
+
+/*7.  Use a loop to display the numbers in the range 0…100  that are Prime Numbers.*/
+
+function Prime(){
+ for (var num=0; num<=100; num++) {
+     var x = false;
+     for (var i = 2; i<=num; i++) {
+         if (num%i===0 && i!==num) {
+             x = true;
+         }
+     }
+     if (x === false) {
+         console.log(num);
+     }
+ }
+}
+
+/*8.  Read a name and display it in reverse format (palindrome)*/
+
+function Palindrome() {
+    var string = prompt('Enter a string or number: '); 
+    var len = string.length;  
+    for (var i = 0; i < len / 2; i=len) {   
+        if (string[i] !== string[len - 1 - i]) {  
+            console.log( 'It is not a palindrome');  
+        }
+        else {
+            console.log('It is a palindrome')
+        }  
+    }
+    console.log(string); 
+    
+}
+
+/*9.  Read a number and convert it from Celsius to Fahrenheit*/
+
+function cel_fah() {
+    var value = prompt("enter the celsius number");
+    var x = parseInt(value);
+    console.log(((9/5*x)+(32)));
+}
+
+/*
+10.Write a JavaScript program to display the current day and time on button click*/
+
+function DateTime()
+{
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    console.log("Current Date is :",date);
+    console.log("Current time is :",time);
+    
+}
